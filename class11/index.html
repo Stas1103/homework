@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practic</title>
+        <style>
+            html {
+                background-image: url(https://s1.1zoom.ru/b5052/733/Tesla_Motors_Model_S_Novitec_2017_Motion_White_561482_1920x1080.jpg) ;
+            }
+
+       button{
+          margin-top: 15px;
+          margin-left: 150px;
+      }
+      .close {
+          position: absolute;
+          top: 15px;
+          margin-left: 220px;
+          color: rgb(110, 110, 110);
+      }
+     .modal{
+        border: 2px black;
+         padding: auto; 
+          background-color: #ffffff;
+          box-shadow: 5px 5px 5px 5px;
+          border-radius: 7px; 
+          width: 250px;
+          height: 130px; 
+          margin-left: 460px;
+
+}
+
+.progressbar {
+    position: absolute;
+    border: 3px solid rgb(128, 255, 215);
+    width: 300px;
+    height: 19px;
+    left: 450px;
+    box-shadow: 3px 3px 3px 3px;
+     margin-top: 30px;
+}
+
+.progressbar__progress {
+    position: relative;
+    background-color: rgb(128, 255, 215);
+    width: 7px;
+    height: 22px;
+    margin: 1px;
+    display:inline-block;
+    top: -3px;
+}
+
+.progressbar__value {
+    position: relative;
+    top: -27px;
+    margin-left: 150px;
+}
+
+
+
+        </style>
+</head>
+<body>
+
+ <div class="modal"><br>
+ <div class="sod">Modal header</div>
+ <div class="sod"><hr>some text in the modal<hr></div>
+
+ <div class="sod"> <button><a href="https://www.youtube.com/watch?v=N6_LmxJYR7w">Close</a></button>
+    <div class="close">✖</div>
+ </div>
+    
+ <div class="progressbar">
+    <div class="progressbar__progress"></div>
+    <div class="progressbar__progress"></div>
+    <div class="progressbar__progress"></div>
+    <div class="progressbar__progress"></div>
+    <div class="progressbar__progress"></div>
+    <div class="progressbar__progress"></div>
+    <div class="progressbar__progress"></div>
+    <div class="progressbar__progress"></div>
+    <div class="progressbar__progress"></div>
+    <div class="progressbar__progress"></div>
+    <div class="progressbar__progress"></div>
+    <div class="progressbar__progress"></div>
+    <div class="progressbar__progress"></div>
+    <div class="progressbar__progress"></div>
+
+    <span class="progressbar__value">72%</span>
+</div>
+
+
+</body>
+</html>
