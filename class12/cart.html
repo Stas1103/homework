@@ -8,19 +8,23 @@
     <title>TeslaShop</title>
     <style>
         html {
-            background-color: #d3d3d3;
+            background: linear-gradient(to right, #F6EFD2, #CEAD78);
+            overflow-x: hidden;
+            margin-right: calc(-1 * (100vw - 100%));
         }
 
         .nlogo {
-            position: absolute;
+            position: relative;
             left: 650px;
             font-size: 32px;
         }
 
         .logo {
-            position: relative;
+            position: absolute;
             left: 730px;
-            margin-top: -40px;
+            margin-top: 10px;
+            width: 400px;
+            height: 250px;
         }
 
         .menu {
@@ -32,201 +36,183 @@
             width: 147px;
         }
 
-        .bito {
+        ol {
+            display: inline-block;
             position: relative;
-            display: inline;
-            padding: 5px;
-            font-size: 28px;
-            padding-left: 5px;
-            height: 25px;
-        }
-
-        .bito:after {
-            content: "";
-            background-color: #ffffff;
-            position: reative;
-
-        }
-
-        .bito:hover:after {
-            display: inline-table;
-            position: relative;
-            content: "1.Стиральные машины     ""2.Пылесосы    ""3.Швейные   ""4.Вышивальные машины ""5.Утюги ""6.Электровеники ""7.Сушилки для обуви";
-            background-color: #d4ff7d;
-            height: auto;
+            top: 15px;
             width: auto;
+            height: auto;
+            font-size: 19px;
+            list-style: none;
         }
 
-        .kitch {
-            position: relative;
-            display: inline;
+        li ol {
+            position: absolute;
+            display: none;
+            margin-top: -0.75em;
+            margin-left: 7.25em;
+
+        }
+
+        li a {
+            display: block;
             padding: 5px;
-            font-size: 28px;
-            padding-left: 250px;
-            height: 25px;
-
+            text-decoration: none;
+            color: #292929;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            border-bottom: none;
+            box-shadow: 2px 2px 2px #d5f7ff;
         }
 
-        .kitch::after {
-            content: "";
-            position: relative;
+        li a:hover {
+            color: #ffffee;
+            background-color: #888888;
         }
 
-        .kitch:hover::after {
-            display: list-item;
-            content: "1.Холодильники ""2.Кухонные плиты ""3.Морозильники ""4.Настольные плиты ""5.Ростеры, мини-печи ""6.Вытяжки ""7.Микроволновые печи ";
-            background-color: #d4ff7d;
-        }
-
-
-        .komp {
-            position: relative;
-            display: inline;
-            padding: 5px;
-            font-size: 28px;
-            padding-left: 550px;
-            height: 25px;
-        }
-
-        .komp::after {
-            content: "";
-            position: relative;
-        }
-
-        .komp:hover::after {
-            display: list-item;
-            content: "1.Ноутбуки ""2.Планшеты ""3.Компьютеры, Моноблоки ""4.Игровые приставки ""5.Ceрверное оборудование ";
-            background-color: #d4ff7d;
-        }
-
-        .korz {
-            position: relative;
-            display: inline;
-            padding: 5px;
-            font-size: 28px;
-            padding-left: 950px;
-            height: 25px;
-        }
-
-        .korz::after {
-            content: "";
-            position: relative;
-        }
-
-        .korz:hover::after {
-            display: list-item;
-            content: "Тут нечего пока нету";
-            background-color: #d4ff7d;
+        li:hover ol {
+            display: block;
+            left: 65px;
         }
 
         footer {
-            background-color: #d3d3d3;
             width: auto;
             height: 130px;
         }
 
-        .adr2 {
-            position: relative;
-            display: inline;
+        .zakaz {
+            position: absolute;
+            display: inline-block;
+            border: 2px solid;
+            background-color: rgb(186, 176, 176);
+            right: 1px;
+            margin-top: 5px;
         }
 
-        .adr2:active {
-            content: "";
-            position: relative;
+        .dost2 {
+            padding: 0 0px 0 0px;
+            background-color: rgb(186, 176, 176);
+            text-align: left;
+
+            color: black;
         }
 
-        .adr2:hover:active {
-            display: list-item;
-            content: "";
+        .menu1,
+        #go {
+            display: none;
         }
 
-        .maps {
-            position: relative;
-            display: inline;
-            width: 250px;
-            height: 250px;
+        .menu2,
+        #st1 {
+            display: none;
         }
 
-        .maps::after {
-            content: "";
-            position: relative;
+        #first:checked~.menu1 {
+            display: block;
         }
 
-        .map:hover::after {
-            display: inline-table;
-            content: url(https://www.google.com/maps/place/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D0%93%D0%BE%D1%80%D0%BA%D0%B0/@53.908444,27.4218907,14.44z/data=!4m13!1m7!3m6!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!2z0JzQuNC90YHQug!3b1!8m2!3d53.9006011!4d27.558972!3m4!1s0x46dbdb2a22e90919:0x34a17c3fc24f5c88!8m2!3d53.906873!4d27.437634);
+        #first1:checked~.menu2 {
+            display: block;
         }
 
+        .menu2:checked~.menu1 {
+            display: none;
+        }
     </style>
     <header>
         <div class="nlogo">TeslaShop</div>
-        <img class="logo" src="Фотки сайта/nlogo1.png">
-        <hr style="background-color: #000000; margin-top: -65px;">
+        <hr>
+        <img class="logo" src="http://pngimg.com/uploads/tesla_car/tesla_car_PNG15.png">
     </header>
 
 </head>
 
 <body>
-
     <div class="menu">Меню</div>
-    <div class="win">
-
-    </div>
-    <div class="menu_sector"><span class="bito">Бытовая техника</span>
-
-    </div>
-    <div class="menu_sector"><span class="kitch">Техника для кухни</span>
-
-    </div>
-    <div class="menu_sector"><span class="komp">Техника для компьютера</span>
-
-    </div>
-    <div class="menu_sector"><span class="korz">Корзина</span>
-
-    </div>
-    </div>
-
-
-    <table class="zakaz">
-        <label>
-            Фамилия и Имя
-        </label>
-        <input name="name" type="text"  required/><br>
-        <br>
-
-        <label>
-            Ваш номер телефона
-        </label>
-        <input name="tel" type="tel" required /><label><br>
-            <br>
+    <nav>
+        <main>
+            <ol class="menu_sector">
+                <li><a href="bito.html">Бытовая техника</a>
+                    <ol>
+                        <li><a href="#">Стиральные машины</a></li>
+                        <li><a href="#">Пылесосы</a></li>
+                        <li><a href="#">Швейные, вышивальные машины</a></li>
+                        <li><a href="#">Утюги</a></li>
+                        <li><a href="#">Электровеники</a></li>
+                        <li><a href="#" class="brd">Сушилки для обуви</a></li>
+                    </ol>
+                </li>
+                <li><a href="kitch.html">Техника для кухни</a>
+                    <ol>
+                        <li><a href="#">Холодильники </a></li>
+                        <li><a href="#">Кухонные плиты</a></li>
+                        <li><a href="#">Морозильники</a></li>
+                        <li><a href="#">Настольные плиты</a></li>
+                        <li><a href="#">Ростеры, мини-печи</a></li>
+                        <li><a href="#">Вытяжки</a></li>
+                        <li><a href="#" class="inf">Микроволновые печи</a></li>
+                    </ol>
+                </li>
+                <li><a href="komp.html">Компьютерная техника</a>
+                    <ol>
+                        <li><a href="#">Ноутбуки </a></li>
+                        <li><a href="#">Планшеты</a></li>
+                        <li><a href="#">Компьютеры, моноблоки</a></li>
+                        <li><a href="#">Игровые приставки</a></li>
+                        <li><a href="#" class="inf">Серверное оборудование</a></li>
+                    </ol>
+                </li>
+                <li><a href="korz.html" class="inf">Корзина</a></li>
+            </ol>
+        </main>
+    </nav>
+    <fieldset class="zakaz">
+        <table>
             <label>
-                E-mail
+                Фамилия и Имя
             </label>
-            <input name="email" type="email" required /> </br>
-            </br>
+            <input name="name" type="text" required placeholder="Иван Иванов" /><br>
+            <br>
+
             <label>
-                Выберите способ доставки:
-                <br><input name="radio1" type="radio" value="radio1"/>Самовывоз со склада по адресу <a class="maps"
-                    href="https://www.google.com/maps/place/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D0%93%D0%BE%D1%80%D0%BA%D0%B0/@53.908444,27.4218907,14.44z/data=!4m13!1m7!3m6!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!2z0JzQuNC90YHQug!3b1!8m2!3d53.9006011!4d27.558972!3m4!1s0x46dbdb2a22e90919:0x34a17c3fc24f5c88!8m2!3d53.906873!4d27.437634">Каменная
-                    горка</a><br>
+                Ваш номер телефона
+            </label>
+            <input name="tel" type="tel" required placeholder="+5736287487" /><label><br>
                 <br>
-            </label>
-            <label class="adr2">
-                <input name="radio1" type="radio" value="radio1" />Курьером по минску
-            </label><br>
-            <br>
-
-            <label class="dost">
-                Адрес доставки
-
-                <input name="adres" type="text" /> </br>
+                <label>
+                    E-mail
+                </label>
+                <input name="email" type="email" required placeholder="napoleion@email.com" /> </br>
                 </br>
-            </label>
+                <input id="first" type="checkbox" />
+                <label for="first" class="dost">Самовывоз со склада по адресу: ул.Каменная Горка</label>
 
-    </table>
+                <ul class="menu1">
+                    <p>Карта адреса<img class="adress" src="Фотки сайта/kamen.png" height="150px" width="250px"></p>
+                </ul>
+                <br>
+                <br>
+                <input id="first1" type="checkbox" />
+                <label for="first1" class="dost2">Курьером по Минску</label>
+
+                <ul class="menu2">
+                    <label class="dost">
+                        Адрес доставки
+                        <input name="adres" type="text" /> </br>
+                </ul>
+            </label>
+            <p>Коментарий к заказу <br><input type="text" placeholder="Желаемое время доставки" name="comment"
+                    style="height:70px; width:auto" /></p>
+            <label>Я прочитал и согласен с <a href="#">условиями доставки</a></label><input type="checkbox" required>
+
+
+
+
+        </table>
+    </fieldset>
     <footer>
         <hr>
- 
+
     </footer>
 
 </body>
