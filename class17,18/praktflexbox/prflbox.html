@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practic</title>
+ <header>
+        Tesla Practic Flex Box
+    </header>
+<style>
+    header {
+        top:2px;
+        position: absolute;
+        font-size: 32px;
+        padding:4px;
+        border:2px solid black;
+        border-radius: 5px 5px;
+        left: 40%;
+    }
+body {
+    background-color:rgb(209, 209, 209);
+}
+
+
+
+.tiles-promo {
+    display: flex;
+    flex-flow: column wrap;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.tile {
+    box-sizing: border-box;
+    flex: 100%;
+    width: 25%;
+    padding: 1em;
+    color: #fff;
+    text-align: center;
+}
+
+.tile_small {
+    flex: 50%;
+}
+</style>
+</head>
+<body>
+
+
+
+   <div class="tiles-promo">
+  <div class="tile" style="background-color: #e83;"><b>Холодильники</b><p>Не трогай! это на новый год</p><img src="http://pngimg.com/uploads/refrigerator/refrigerator_PNG101539.png" alt="холодильник" width="350px" height="290px"></div>
+  <div class="tile tile_small" style="background-color: #8a3;"><B>Автомобильные шины</B> <p>Опереди зиму!</p><img src="http://pngimg.com/uploads/tire/tire_PNG59.png" alt="шины" width="80px" height="80px"></div>
+  <div class="tile tile_small" style="background-color: #3a8;"><B>Пылесосы</B><p> C заботой о своём доме</p><img src="https://pngimg.com/uploads/vacuum_cleaner/vacuum_cleaner_PNG44.png" alt="пылесос" width="90px" height="90px"></div>
+  <div class="tile" style="background-color: #83e;"><b>Моторные масла</b><p>более 4. тысяч предложений</p><img src="https://www.total-lub.ru/sites/g/files/wompnd591/f/styles/total_215x322/public/atoms/image/quartz_9000_5w-40_0.png?itok=ccIR_ti0" alt="масло" width="250px" height="290px"></div>
+  <div class="tile tile_small" style="background-color: #38e;"><b>Детские коляски</b><p>Более 6. тысяч предложений</p><img src="http://pngimg.com/uploads/pram/pram_PNG17905.png" alt="коляски" height="90px" width="90px"></div>
+  <div class="tile tile_small" style="background-color: #e38;"><b>Беспроводные колонки</b><p>Лучший звук для дома и улицы</p><img src="https://rivergrand.by/upload/iblock/119/1190f10c0f61c035b0ba96b8d4d6a41a.png" alt="колонки " width="130px" height="90px"</div>
+</div>
+
+
+    
+</body>
+</html>
