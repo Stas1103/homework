@@ -7,28 +7,67 @@
     <title>soccer-ball</title>
 
     <style>
-
+ * {
+     left: 0px;
+     top: 0px;
+ }
 body {
     background-color: #eee;
 }
 .pole {
     position: relative;
     border: 3px solid black;
-    width: auto;  
+    width: 1440px;  
     height: 59px;
     margin-top: 23%;
 }
 
 .soccer-ball {
     position: relative;
-    background-image: url(ball.png);
+    background: url(ball.png);
     background-size: 4%;
-    height: auto;
     height: 59px;
     background-repeat: no-repeat;
-    transition-timing-function: ease;
-    transition-property: right;
-    transition-duration: 3s; 
+
+
+    animation-name: soccer-ball;
+    animation-duration:15s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+.pole:hover .soccer-ball{
+    animation-play-state: paused;
+}
+@keyframes soccer-ball{
+     0%{
+         top: 0%;
+left: 0px;
+     }
+     10% {
+         margin-top: 0px;
+         transform:rotate(25deg) ;
+         left:136px ;
+
+     }
+     20% {
+         margin-top: 0px;
+        transform:rotate(50deg) ;
+        left: 272px;
+     }
+     30% {
+         margin-top: 0px;
+        transform:rotate(75deg) ;
+        left: 408px;
+     }
+     40% {
+        transform:rotate(100deg) ;
+        margin-top: 0px;
+     }
+     100% {
+       left: 1360px;
+     }
 }
     </style>
     
