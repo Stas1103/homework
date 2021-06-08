@@ -17,21 +17,21 @@ body {
 .pole {
     position: relative;
     border: 3px solid black;
-    width: 1440px;  
+    width: 614px;  
     height: 59px;
-    margin-top: 23%;
 }
 
 .soccer-ball {
-    position: relative;
+    position: absolute;
     background: url(ball.png);
-    background-size: 4%;
+    background-size: contain;
     height: 59px;
+    width: 59px;
     background-repeat: no-repeat;
 
 
     animation-name: soccer-ball;
-    animation-duration:15s;
+    animation-duration:4s;
     animation-direction: alternate;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -43,30 +43,15 @@ body {
 @keyframes soccer-ball{
      0%{
          top: 0%;
+         left: 0;
+         transform: rotate(0deg);
 left: 0px;
      }
-     10% {
-         margin-top: 0px;
-         transform:rotate(25deg) ;
-         left:136px ;
 
-     }
-     20% {
-         margin-top: 0px;
-        transform:rotate(50deg) ;
-        left: 272px;
-     }
-     30% {
-         margin-top: 0px;
-        transform:rotate(75deg) ;
-        left: 408px;
-     }
-     40% {
-        transform:rotate(100deg) ;
-        margin-top: 0px;
-     }
      100% {
-       left: 1360px;
+       left: 555px;
+       top: 0;
+       transform: rotate(1000deg);
      }
 }
     </style>
