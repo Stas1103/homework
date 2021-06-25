@@ -1,107 +1,104 @@
 * {
-    margin:0;
-    padding: 0px;
+  margin: 0px;
+  left: 0px;
 }
-body{
-    background-color: black;
+
+header {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: 75%;
 }
-header{
-    width: 100%;
-    height:auto;
-    background-repeat: no-repeat;
-    background-size: 75% ;
+
+.bglogo {
+  background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Design/4gc-design/4gc-00-teaser-hd1.jpg.asset.1622797516732.jpg);
+  position: absolute;
+  width: 100%;
+  top: -2em;
+  height: 75%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transition: all 2.1s;
 }
-.bglogo{
-    background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Design/4gc-design/4gc-00-teaser-hd1.jpg.asset.1622797516732.jpg);
-    position: absolute;
-    width: 100%;
-    top: -2em;
-    height: 75%;
-    background-repeat: no-repeat;
-    background-size: 100% ;
-}
+
 .bglogo:hover {
-    background-size : 104%;
-    transition-duration: 2.1s ;
-    
-  
+  background-size: 104%;
 }
-.hlogo{
-    position: relative;
-    left: 2em;
-   height: 70px;
-}
-nav{
-    position: absolute;
-    font-family: BMWTypeNextLatin,Helvetica,Arial,'Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,sans-serif;
-    font-style: italic;
-    display: flex;
-    width: 70%;
-    height: 30px;
-    top: 10%;
-    left: 25%;
-    
 
-    
+.hlogo {
+  position: relative;
+  left: 2em;
+  height: 70px;
 }
-.serch{
-    display: flex;
-    top: -15px;
-    width: 80%;
-    height: 160px;
-    position: relative;
-    color: white;
-    background-image: url(pngegg.png);
-    background-repeat: no-repeat;
+
+nav {
+  position: absolute;
+  font-family: BMWTypeNextLatin, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-style: italic;
+  display: flex;
+  width: 70%;
+  height: 30px;
+  top: 10%;
+  left: 25%;
 }
- nav a{
-    color: white;
-    margin: 15px;
-    text-decoration: none;
+
+.serch {
+  display: flex;
+  top: -15px;
+  width: 80%;
+  height: 160px;
+  position: relative;
+  color: white;
+  background-image: url(pngegg.png);
+  background-repeat: no-repeat;
 }
-nav a:hover{
-    color: rgb(0, 0, 172) ;
-    
+
+nav a {
+  color: white;
+  margin: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0000ac;
 }
 
 .au {
-    font-size: 30px;
-    line-height: 38px;
-    margin-bottom: 20px;
-    width: 70%;
-    color: white;
-    
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 20px;
+  width: 70%;
+  color: white;
 }
- .ag{
-    font-size: 36px;
-    line-height: 38px;
-    margin-bottom: 20px;
-    width: 70%;
-    color: white;
+
+.ag {
+  font-size: 36px;
+  line-height: 38px;
+  margin-bottom: 20px;
+  width: 70%;
+  color: white;
 }
+
 .au {
-    position: relative;
-    bottom: -60%;
-    left: 2em;
-}
-.inf{
-    font-family: BMWTypeNextLatin,Helvetica,Arial,'Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo,sans-serif;
-    margin: 0px;
-    padding: 0 40px;
-    text-align: center;
-    border-width: 120px;
-    color: white;
-    
-    
-
-}
-.inf:hover{
-    border-color: white;
-    color: black;
-    background-color: white;
+  position: relative;
+  bottom: -60%;
+  left: 2em;
 }
 
+.inf {
+  font-family: BMWTypeNextLatin, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  margin: 0px;
+  padding: 0 40px;
+  text-align: center;
+  border-width: 120px;
+  color: white;
+}
 
+.inf:hover {
+  border-color: white;
+  color: black;
+  background-color: white;
+}
 
-
-
+/*# sourceMappingURL=main.css.map */
