@@ -81,9 +81,9 @@ nav a:hover {
 }
 
 .au {
-  position: relative;
-  bottom: -60%;
+  position: inherit;
   left: 2em;
+  bottom: 1em;
 }
 
 .inf {
@@ -99,6 +99,140 @@ nav a:hover {
   border-color: white;
   color: black;
   background-color: white;
+}
+
+.item {
+  position: relative;
+  top: 100em;
+  width: auto;
+  background-color: green;
+  border: 1px solid black;
+}
+
+.parkour {
+  grid-area: item01;
+  background-image: url(https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/performance/city-and-me/cam-00-teaser-hd1.mp4);
+  background-size: 100% 100%;
+}
+
+.intinov {
+  grid-area: item02;
+  background-image: url(https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/innovation/controlling/int-00-teaser-high.mp4);
+  background-size: 100% 100%;
+}
+
+.sustinability {
+  grid-area: item03;
+  background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Innovation/sus-expert/sue-00-teaser-hd.jpg.asset.1621494395754.jpg);
+  background-size: 100% 100%;
+}
+
+.sust2 {
+  grid-area: item04;
+  background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Innovation/sus-cars/suscar-00-teaser-hd-02.jpg.asset.1620741480897.jpg);
+  background-size: 100% 100%;
+}
+
+.art {
+  grid-area: item05;
+  background-image: url(https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/innovation/the8aiart/art-00-teaser-hd.mp4);
+  background-size: 100% 100%;
+}
+
+.heroes {
+  grid-area: item06;
+  background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/events/manga/01-HoR-teaser-hd.jpg.asset.1619096794568.jpg);
+  background-size: 100% 100%;
+}
+
+.esportboost {
+  grid-area: item1;
+  background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/events/esports/BMW_Esports_Boost_Key_Visual_16x9.jpg.asset.1618217779092.jpg);
+  background-size: 100% 100%;
+}
+
+.jeff {
+  grid-area: item2;
+  background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Design/jeff-koons/jk-00-teaser-hd.jpg.asset.1618472642292.jpg);
+  background-size: 100% 100%;
+}
+
+.techupd {
+  grid-area: item3;
+  background-image: url(https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/performance/torque/hp-00-teaser-hd.mp4);
+  background-size: 100% 100%;
+}
+
+.woman11 {
+  grid-area: item4;
+  background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Innovation/ultrawideband/uwb-01-stage-hd2.jpg.asset.1614155707619.jpg);
+  background-size: 100% 100%;
+}
+
+.sensor {
+  grid-area: item5;
+  background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/women-automotive/wom-00-teaser-hd.jpg.asset.1614863620769.jpg);
+  background-size: 100% 100%;
+}
+
+.materials {
+  grid-area: item6;
+  background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Innovation/sensors/sns-00-teaser-hd.jpg.asset.1617715780354.jpg);
+  background-size: 100% 100%;
+}
+
+.yers10 {
+  grid-area: item7;
+  background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Innovation/focussing/Fcs-00-teaser-hd.jpg.asset.1611220005424.jpg);
+  background-size: 100% 100%;
+}
+
+.legrace {
+  grid-area: item8;
+  background-image: url(https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/innovation/bmwi/bmwi-00-teaser-hd.mp4);
+  background-size: 100% 100%;
+}
+
+.aerodin {
+  grid-area: item9;
+  background-image: url(https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/performance/rennklassiker/rk-00-teaser-hd2.mp4);
+  background-size: 100% 100%;
+}
+
+.blackgold {
+  grid-area: item10;
+  background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Design/form-follows-function/fff-00-teaser-hd.jpg.asset.1611659614371.jpg);
+  background-size: 100% 100%;
+}
+
+.limlove {
+  grid-area: item11;
+  background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/performance/aoc/aoc-00-teaser-hd.jpg.asset.1608286237602.jpg);
+  background-size: 100% 100%;
+}
+
+.mal {
+  grid-area: item12;
+  background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/valentinesday/vd-00-teaser-hd.jpg.asset.1613057287426.jpg);
+  background-size: 100% 100%;
+}
+
+.cont {
+  position: relative;
+  top: 30em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(12, 350px);
+  height: 160vh;
+  grid-gap: 2px 2px;
+  grid-template-areas: "item01 item01 item02" "item01 item01 item03" "item04 item05 item06" "item1 item2 item2" "item3 item2 item2" "item4 item5 item6" "item7 item7 item8" "item7 item7 item9" "item10 item11 item12";
+}
+
+@media (max-width: 640px) {
+  .cont {
+    flex-direction: columns;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -71,9 +71,10 @@ nav a:hover {
     color: white;
 }
 .au {
-    position: relative;
-    bottom: -60%;
+    position: inherit;
     left: 2em;
+    bottom: 1em;
+
 }
 .inf {
     font-family: BMWTypeNextLatin, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
