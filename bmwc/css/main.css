@@ -82,7 +82,7 @@ nav a:hover {
 
 .au {
   position: inherit;
-  left: 2em;
+  right: 2em;
   bottom: 1em;
 }
 
@@ -103,28 +103,22 @@ nav a:hover {
 
 .item {
   position: relative;
-  top: 100em;
-  width: auto;
-  background-color: green;
-  border: 1px solid black;
+  top: 20em;
 }
 
 .parkour {
   grid-area: item01;
-  background-image: url(https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/performance/city-and-me/cam-00-teaser-hd1.mp4);
-  background-size: 100% 100%;
+  display: block;
+  background-size: contain;
 }
 
 .intinov {
   grid-area: item02;
-  background-image: url(https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/innovation/controlling/int-00-teaser-high.mp4);
-  background-size: 100% 100%;
 }
 
 .sustinability {
   grid-area: item03;
   background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Innovation/sus-expert/sue-00-teaser-hd.jpg.asset.1621494395754.jpg);
-  background-size: 100% 100%;
 }
 
 .sust2 {
@@ -135,8 +129,7 @@ nav a:hover {
 
 .art {
   grid-area: item05;
-  background-image: url(https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/innovation/the8aiart/art-00-teaser-hd.mp4);
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .heroes {
@@ -159,7 +152,6 @@ nav a:hover {
 
 .techupd {
   grid-area: item3;
-  background-image: url(https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/performance/torque/hp-00-teaser-hd.mp4);
   background-size: 100% 100%;
 }
 
@@ -189,13 +181,11 @@ nav a:hover {
 
 .legrace {
   grid-area: item8;
-  background-image: url(https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/innovation/bmwi/bmwi-00-teaser-hd.mp4);
   background-size: 100% 100%;
 }
 
 .aerodin {
   grid-area: item9;
-  background-image: url(https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/performance/rennklassiker/rk-00-teaser-hd2.mp4);
   background-size: 100% 100%;
 }
 
@@ -219,20 +209,24 @@ nav a:hover {
 
 .cont {
   position: relative;
-  top: 30em;
+  top: 20em;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(12, 350px);
-  height: 160vh;
-  grid-gap: 2px 2px;
+  grid-template-rows: repeat(12, 280px);
+  height: 165vh;
+  grid-gap: 1px 2px;
   grid-template-areas: "item01 item01 item02" "item01 item01 item03" "item04 item05 item06" "item1 item2 item2" "item3 item2 item2" "item4 item5 item6" "item7 item7 item8" "item7 item7 item9" "item10 item11 item12";
 }
 
-@media (max-width: 640px) {
-  .cont {
-    flex-direction: columns;
-  }
+footer {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  display: flex;
+  background-color: green;
+  align-content: flex-end;
+  bottom: -160em;
 }
 
 /*# sourceMappingURL=main.css.map */
