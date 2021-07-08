@@ -1,9 +1,75 @@
-footer{
+footer a {
+   text-decoration: solid;
+   color: grey;
+}
+
+footer {
+   font-size: 14px;
+   font-family: BMWTypeNextLatin, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
    width: 100%;
-   height: 550px;
+   height: 650px;
    position: relative;
+   background-color: rgb(39, 39, 39);
    display: flex;
-   background-color: green;
-   align-content: flex-end;
    bottom: -160em;
+}
+.lang {
+   display: flex;
+   margin-top: 3%;
+   margin-left: 10.5%;
+   height: 30px;
+}
+.lang:hover {
+   color: white;
+}
+.quiklinks {
+   display: inline-flex;
+   margin-top: 10%;
+   margin-left: -15%;
+   flex-direction: column;
+   width: 225px;
+   color: white;
+}
+.quiklinks .sect {
+   color: grey;
+}
+.sect:hover {
+   color: white;
+}
+.morebmwwb {
+   display: inline-flex;
+   margin-top: 10%;
+   flex-direction: column;
+
+   color: white;
+}
+.morebmwwb .web {
+   color: grey;
+}
+.web:hover {
+   color: white;
+}
+.aboutus {
+   display: inline-flex;
+   margin-top: 10%;
+   flex-direction: column;
+   color: white;
+}
+.aboutus .contact {
+   color: grey;
+}
+.contact:hover {
+   color: white;
+}
+.visituson {
+   display: inline-flex;
+   margin-top: 10%;
+   flex-direction: column;
+   color: white;
+}
+.add{
+   margin: 6px;
+}
+.add:hover{
+   color: white;
 }

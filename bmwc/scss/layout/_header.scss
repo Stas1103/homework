@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     left: 0px;
 }
@@ -7,6 +7,20 @@ header {
     height: auto;
     background-repeat: no-repeat;
     background-size: 75%;
+}
+.coolbut {
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    width: 250px;
+    border: 2px solid #fff;
+    color: #fff;
+    
+}
+.coolbut:hover{
+    color: black;
+    background-color: #fff;
 }
 .bglogo {
     background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Design/4gc-design/4gc-00-teaser-hd1.jpg.asset.1622797516732.jpg);
@@ -60,6 +74,7 @@ nav a:hover {
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 20px;
+    left: 3%;
     width: 70%;
     color: white;
 }
@@ -76,6 +91,7 @@ nav a:hover {
     bottom: 1em;
 
 }
+
 .inf {
     font-family: BMWTypeNextLatin, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     margin: 0px;
