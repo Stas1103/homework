@@ -1,3 +1,6 @@
+html{
+    font-family: BMWTypeNextLatin, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
 * {
     margin: 0px;
     left: 0px;
@@ -42,13 +45,12 @@ header {
 }
 nav {
     position: absolute;
-    font-family: BMWTypeNextLatin, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-    font-style: italic;
     display: flex;
     width: 70%;
     height: 30px;
-    top: 10%;
-    left: 25%;
+    top: 5%;
+    left: 15%;
+    justify-content: center;
 }
 .serch {
     display: flex;
@@ -69,28 +71,21 @@ nav a:hover {
 }
 
 .au {
+    position: absolute;
     font-size: 30px;
     line-height: 38px;
-    left: 3%;
+    left: 4%;
+    bottom:12%;
     width: 70%;
     color: white;
 }
 .ag {
     font-size: 36px;
     line-height: 38px;
-    margin-bottom: 20px;
     width: 70%;
     color: white;
 }
-.au {
-    position: inherit;
-    right: 2em;
-    bottom: 1em;
-
-}
-
 .inf {
-    font-family: BMWTypeNextLatin, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     margin: 0px;
     padding: 0 40px;
     text-align: center;

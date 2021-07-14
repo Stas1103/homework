@@ -1,17 +1,9 @@
+html{
+    font-family: BMWTypeNextLatin, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
 .item {
     position: relative;
-
 }
-.findurbmw{
-    position: relative;
-    display: flex;
-    margin-top:1px;
-    background-color:grey;
-    width: auto;
-    height: 250px;
-    
-}
-
 //VIDEO\\
 .parkour {
     grid-area: item01;
@@ -25,6 +17,7 @@
 }
 .sustinability {
     grid-area: item03;
+    background-size: contain;
     background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Innovation/sus-expert/sue-00-teaser-hd.jpg.asset.1621494395754.jpg);
 }
 .sust2 {
@@ -64,6 +57,7 @@
     background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Innovation/ultrawideband/uwb-01-stage-hd2.jpg.asset.1614155707619.jpg);
     background-size: 100% 100%;
 }
+
 .sensor {
     grid-area: item5;
     background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/women-automotive/wom-00-teaser-hd.jpg.asset.1614863620769.jpg);
@@ -106,15 +100,12 @@
     background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/valentinesday/vd-00-teaser-hd.jpg.asset.1613057287426.jpg);
     background-size: 100% 100%;
 }
-
 .cont {
     position: relative;
-    top: 20em;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(12, 280px);
-    height: 165vh;
+    grid-template-rows: repeat(16, 280px);
     grid-gap: 1px 2px;
     grid-template-areas:
         "item01 item01 item02"
@@ -125,5 +116,12 @@
         "item4 item5 item6"
         "item7 item7 item8"
         "item7 item7 item9"
-        "item10 item11 item12";
+        "item10 item11 item12"
+}
+.cont p{
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    bottom: 10%;
+    left: 3%;
 }

@@ -1,3 +1,7 @@
+html {
+  font-family: BMWTypeNextLatin, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
 * {
   margin: 0px;
   left: 0px;
@@ -48,13 +52,12 @@ header {
 
 nav {
   position: absolute;
-  font-family: BMWTypeNextLatin, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  font-style: italic;
   display: flex;
   width: 70%;
   height: 30px;
-  top: 10%;
-  left: 25%;
+  top: 5%;
+  left: 15%;
+  justify-content: center;
 }
 
 .serch {
@@ -78,9 +81,11 @@ nav a:hover {
 }
 
 .au {
+  position: absolute;
   font-size: 30px;
   line-height: 38px;
-  left: 3%;
+  left: 4%;
+  bottom: 12%;
   width: 70%;
   color: white;
 }
@@ -88,19 +93,11 @@ nav a:hover {
 .ag {
   font-size: 36px;
   line-height: 38px;
-  margin-bottom: 20px;
   width: 70%;
   color: white;
 }
 
-.au {
-  position: inherit;
-  right: 2em;
-  bottom: 1em;
-}
-
 .inf {
-  font-family: BMWTypeNextLatin, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   margin: 0px;
   padding: 0 40px;
   text-align: center;
@@ -114,17 +111,12 @@ nav a:hover {
   background-color: white;
 }
 
-.item {
-  position: relative;
+html {
+  font-family: BMWTypeNextLatin, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
-.findurbmw {
+.item {
   position: relative;
-  display: flex;
-  margin-top: 1px;
-  background-color: grey;
-  width: auto;
-  height: 250px;
 }
 
 .parkour {
@@ -139,6 +131,7 @@ nav a:hover {
 
 .sustinability {
   grid-area: item03;
+  background-size: contain;
   background-image: url(https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/Innovation/sus-expert/sue-00-teaser-hd.jpg.asset.1621494395754.jpg);
 }
 
@@ -230,14 +223,24 @@ nav a:hover {
 
 .cont {
   position: relative;
-  top: 20em;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(12, 280px);
-  height: 165vh;
+  grid-template-rows: repeat(16, 280px);
   grid-gap: 1px 2px;
   grid-template-areas: "item01 item01 item02" "item01 item01 item03" "item04 item05 item06" "item1 item2 item2" "item3 item2 item2" "item4 item5 item6" "item7 item7 item8" "item7 item7 item9" "item10 item11 item12";
+}
+
+.cont p {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  bottom: 10%;
+  left: 3%;
+}
+
+html {
+  font-family: BMWTypeNextLatin, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 footer a {
@@ -253,7 +256,6 @@ footer {
   position: relative;
   background-color: #272727;
   display: flex;
-  bottom: -160em;
 }
 
 .lang {
@@ -335,6 +337,60 @@ footer {
   color: white;
   margin-top: 620px;
   margin-left: 12%;
+}
+
+.block4 {
+  position: relative;
+  display: flex;
+  background-color: #f0f0f0;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  top: 24%;
+}
+
+.findurbmw {
+  margin-top: 5%;
+  height: 150px;
+  justify-content: center;
+}
+
+.firstst {
+  font-size: 28px;
+  margin-left: 8%;
+}
+
+.twost {
+  font-size: 48px;
+}
+
+.threest {
+  font-size: 28px;
+  margin-left: 15%;
+}
+
+.block6 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+}
+
+.coolbut2 {
+  font-size: 24px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  height: 50px;
+  width: 370px;
+  border: 2px solid #474747;
+  color: #474747;
+}
+
+.coolbut2:hover {
+  color: white;
+  background-color: #474747;
 }
 
 /*# sourceMappingURL=main.css.map */
