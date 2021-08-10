@@ -1,51 +1,36 @@
+//задача 4 из практики
+// function fackt(a) {
+//     let b = 1
+//     for (let i = 1; i <= a; i++){
+//         b = b * i
+//     }
+//     return b
+//   }
 
-//     a = parseInt(prompt("Введите первое число"))
-//     b = parseInt(prompt("Введите второе число"))
-//     c = parseInt(prompt("Введите третье число"))
-// function getNumber(){
-//     if (a < b && b < c) {
-//     console.log(a)
-//     }
-//     if (c < b && b < a) {
-//        console.log(c)
-//     }
 
-//     if (b < a && a < c) {
-//     console.log(b)
-//     }
 
-//     if (c < a && a < b) {
-//     console.log(c)
-//     }
 
-//     if (a < c && c < b) {
-//     console.log(a)
+
+//задача1
+// function getNumber(a, b, c) {
+//     if (a < b) {
+//         if (a < c)
+//             return a;
+//         else return c;
 //     }
-//     if (b < c && c < a) {
-//     console.log(b)
+//     else {
+//         if (b > c && a > c) 
+//             return c;
+//          else  return b;
 //     }
 // }
-// getNumber()
 
 
+//задача2
+// function getDaysHoursAndMinInSec(days, hour, minutes) {
+//     return (86400* days + 3600*hour + 60 * minutes)
+// }
 
-
-
-a = parseInt(prompt("Введите первое число"))
-b = parseInt(prompt("Введите второе число"))
-c = parseInt(prompt("Введите третье число"))
-function getNumber(a, b, c) {
-    for (let getNumber=prompt(a) ; a < b; b < c)
-        return getNumber()
-
-    for (let getNumber=(c); c < b; b < a) {
-       return getNumber()
-    }
-
-    for (let getNumber=(b); b < a; a < c) {
-       return getNumber()
-    }
-
-}
-getNumber()
+//стрелочная 
+// let arrowSecond = (days, hours, minutes) => 86400* days + 3600*hour + 60 * minutes
 

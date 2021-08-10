@@ -5,12 +5,10 @@ html{
     position: relative;
 }
 //VIDEO\\
-.parkour {
-    grid-area: item01;
-    display: block;
-    background-size: contain;
+video{
+    height: 100%;
+    width: 100%;
 }
-
 //VIDEO\\
 .intinov {
     grid-area: item02;
@@ -81,7 +79,7 @@ html{
 }
 .aerodin {
     grid-area: item9;
-
+    
     background-size: 100% 100%;
 }
 .blackgold {
@@ -101,12 +99,12 @@ html{
     background-size: 100% 100%;
 }
 .cont {
-    position: relative;
+    position: inherit;
     width: 100%;
     display: grid;
+    grid-gap: 4px 4px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(16, 280px);
-    grid-gap: 1px 2px;
+    grid-template-rows: repeat(12, 340px);
     grid-template-areas:
         "item01 item01 item02"
         "item01 item01 item03"
@@ -116,7 +114,7 @@ html{
         "item4 item5 item6"
         "item7 item7 item8"
         "item7 item7 item9"
-        "item10 item11 item12"
+        "item10 item11 item12";
 }
 .cont p{
     position: absolute;
